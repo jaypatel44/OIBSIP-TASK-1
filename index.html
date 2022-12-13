@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Tech</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="textBox">
+            <h2>Welcome to TECH</h2>
+            <p>Here you can buy Mobiles, Personal computers, Headphones, Earphones and many more gadgets 
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+            <img src="img.png" class="tech">
+        </div>
+    </div>
+    <div class="thumblist">
+        <ul class="thumb">
+            <li><img onclick="changeImage('img.png')" src="img.png" class="imgs"></li>
+            <li><img onclick="changeImage('img1.png')" src="img1.png" class="imgs"></li>
+            <li><img onclick="changeImage('img2.png')" src="img2.png" class="imgs"></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

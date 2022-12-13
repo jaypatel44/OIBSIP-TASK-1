@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+    box-shadow: 2px 2px 7px 2px rgb(48, 50, 51);
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background: #1b9bff; 
+    color: black;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.content{
+    background: url("jay.png") no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-color: rgb(150, 150, 231);
+    position: absolute;
+    width: 100%;
+    height: calc(100vh-80px);
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    padding-right: 0px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.tech{
+    width: 30rem;
+    /* padding-top: 100px; */
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2{
+    color: #333;
+    font-size: 3em;
+    line-height: 2.9rem;
+    font-weight: 250;
+}
+.content .textBox p{
+    margin-top: 30px;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #1b9bff;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    letter-spacing: 1px
+}
+.content .imgBox{
+    display: flex;
+    justify-content: flex-end;
+    height: 550px;
+}
+
+ .thumb li{
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumblist{
+    width: 100px;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 80px;
+}
+.textBox p{
+    width: 30rem;
+}
+@media (max-width: 992px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .thumb{
+        position:absolute;
+        left: 20%;
+        bottom: 75%px;
+        transform: translateX(-50%);
+        display: flex;
+    }
+    .content{
+        justify-content: center;
+        height: 100%;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        text-align: center;
+        transition: all .5s;
+        left: -200%;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .thumb{
+        position:absolute;
+        left: 20%;
+        bottom: 75%px;
+        transform: translateX(-50%);
+        display: flex;
+    }
+    .content{
+        align-items: center;
+        justify-content: center;
+    }
+}
